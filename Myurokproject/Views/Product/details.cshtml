@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = $"details {ViewBag.Id}";
+}
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+</head>
+<div style="
+    font-family: Arial;
+    padding: 40px;
+    text-align: center;
+    ">
+    <h2>Name:@ViewBag.Name</h2>
+    <h4>Price: @ViewBag.Price</h4>
+    <p>
+       id: @ViewBag.Id <a href="/product/index">back</a>
+    </p>
+</div>
